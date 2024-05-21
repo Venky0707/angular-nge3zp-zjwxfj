@@ -1,0 +1,22 @@
+
+<ul class="menu">
+  <ng-container *ngFor="let item of menuItems">
+    <li>
+      {{ item.label }}
+      <ul *ngIf="item.children">
+        <ng-container *ngFor="let child of item.children">
+          <li>
+            {{ child.label }}
+            <ul *ngIf="child.children">
+              <ng-container *ngFor="let grandchild of child.children">
+                <li>
+                  {{ grandchild.label }}
+                </li>
+              </ng-container>
+            </ul>
+          </li>
+        </ng-container>
+      </ul>
+    </li>
+  </ng-container>
+</ul>
