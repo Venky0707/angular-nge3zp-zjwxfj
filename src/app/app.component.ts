@@ -6,32 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  menuItems = [
-    {
-      label: 'Item 1',
-      children: [
-        { label: 'Item 1.1' },
-        {
-          label: 'Item 1.2',
-          children: [
-            { label: 'Item 1.2.1' },
-            {
-              label: 'Item 1.2.2',
-              children: [{ label: 'test' }, { label: 'test' }],
-            },
-          ],
-        },
-      ],
-    },
-    {
-      label: 'Item 2',
-      children: [
-        { label: 'Item 2.1' },
-        { label: 'Item 2.2', children: [{ label: 'test' }, { label: 'test' }] },
-      ],
-    },
-  ];
-}
+  
 
 <!DOCTYPE html>
 <html lang="en">
